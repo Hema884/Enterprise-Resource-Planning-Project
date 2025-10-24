@@ -13,16 +13,17 @@ This project consists of a frontend React application and a backend Node.js serv
 ### Frontend Setup
 
 1. Navigate to the frontend directory:
+
    ```bash
    cd erp-frontend
    ```
-
 2. Install dependencies:
+
    ```bash
    npm install
    ```
-
 3. Start the development server:
+
    ```bash
    npm run dev
    ```
@@ -32,27 +33,28 @@ This project consists of a frontend React application and a backend Node.js serv
 ### Backend Setup
 
 1. Navigate to the backend directory:
+
    ```bash
    cd erp-backend
    ```
-
 2. Install dependencies:
+
    ```bash
    npm install
    ```
-
 3. Start the server:
+
    ```bash
    node server.js
    ```
 
-   The backend API will be available at `http://localhost:3000`
+   The backend API will be available at `http://localhost:5173`
 
 ### Database Setup
 
 1. Make sure PostgreSQL is installed and running on your system.
-
 2. Create and initialize the database:
+
    ```bash
    # Login to PostgreSQL
    psql -U postgres
@@ -60,8 +62,8 @@ This project consists of a frontend React application and a backend Node.js serv
    # Run the initialization script
    \i erp-backend/init_database.sql
    ```
-
 3. Load sample data:
+
    ```bash
    # Make sure you're connected to the erp_project_2025_db database
    \c erp_project_2025_db
@@ -73,6 +75,7 @@ This project consists of a frontend React application and a backend Node.js serv
 ### Database Connection
 
 The backend expects the following PostgreSQL connection:
+
 - Database Name: `erp_project_2025_db`
 - Default Host: `localhost`
 - Default Port: `5432`
@@ -88,14 +91,17 @@ If you need to modify these settings, please update them in the backend configur
 ## Troubleshooting
 
 ### Database Issues
+
 - Ensure PostgreSQL service is running
 - Verify database name matches `erp_project_2025_db`
 - Check if PostgreSQL user has appropriate permissions
 
 ### Frontend Issues
+
 - Clear npm cache if dependencies fail to install: `npm cache clean --force`
 - Check if the correct Node.js version is installed: `node --version`
 
 ### Backend Issues
+
 - Verify that port 3000 is not in use by another application
 - Check logs in `erp-backend/src/logger/app.log` for error details
