@@ -28,7 +28,7 @@ This project consists of a frontend React application and a backend Node.js serv
    npm run dev
    ```
 
-   The frontend will be available at `http://localhost:5173`
+   The frontend will be available at `http://localhost:5175`
 
 ### Backend Setup
 
